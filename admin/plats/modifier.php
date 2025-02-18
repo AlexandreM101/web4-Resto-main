@@ -7,7 +7,7 @@ if (empty($_POST))
 { 
     //affichage du form
     $id = $_GET["id"];
-    
+     
     $sql = "
     
         SELECT *
