@@ -43,7 +43,7 @@ $plats = $stmt->fetchAll();
 </head>
 <body>
     <div class="all">
-        <h1>Zone admin</h1>
+        <h1>Gestions des repas</h1>
         
         <div class="nav">
             <h2>Liste des repas</h2>

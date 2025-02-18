@@ -85,7 +85,7 @@ div.bouton input:hover {
 div.image input[type="file"]::file-selector-button {
     border: 3px solid rgb(57, 115, 98);
     background-color: rgb(242, 222, 196);
-    width: 200px;
+    width: 120px;
     
 }
 div.image input[type="file"]::file-selector-button:hover {

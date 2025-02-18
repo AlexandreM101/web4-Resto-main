@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+div.pastille {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+
+div.bouton {
+    padding: 85px;
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
