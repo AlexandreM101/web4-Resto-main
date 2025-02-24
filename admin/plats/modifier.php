@@ -1,25 +1,15 @@
 <?php
 
-include "../../includes/bdd.php";
+include "../../includes/init.php";
 
 
 if (empty($_POST))
 { 
     //affichage du form
     $id = $_GET["id"];
-     
-    $sql = "
-    
-        SELECT *
-        FROM plats
-        WHERE id = :id
-    ";
-    
-    $stmt = $bdd->prepare($sql);
-    $stmt->execute([
-        ":id" => $id,
-    ]);
-    $plat = $stmt->fetch();
+    $plat = selectById("plats",$id);
+
+   
 
 }
 else 

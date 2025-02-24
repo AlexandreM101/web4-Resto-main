@@ -1,6 +1,6 @@
 <?php
 
-include "../../includes/bdd.php";
+include "../../includes/init.php";
 
 if (!empty($_POST))
 {

@@ -1,5 +1,5 @@
 <?php
-include "../../includes/bdd.php";
+include "../../includes/init.php";
 
 if (!empty($_GET["supprimer"])) {
     $sql = "
@@ -15,22 +15,8 @@ if (!empty($_GET["supprimer"])) {
     header("location: index.php");
 }
 
-$sql = "
-    SELECT 
-        id, 
-        nom,
-        acoter,
-        prix,
-        ingredients,
-        image
-    FROM plats
-    ORDER BY 
-    nom ASC
-";
-$stmt = $bdd->prepare($sql);
-$stmt->execute();
-$plats = $stmt->fetchAll();
 
+$plats = selectAll("plats","*","nom ASC");
 ?>
 
 <!DOCTYPE html>
