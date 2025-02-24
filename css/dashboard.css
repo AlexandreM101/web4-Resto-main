@@ -2,13 +2,54 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(242, 232, 201);
     
 }
 div.pastille {
-    width: 150px;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: lightblue;
+}
+
+div.pastille:hover {
+    background-color: rgb(191,63,63);
+}
+
+div.pastille img {
+    width: 150px;
+    height: 150px;
+}
+
+img.vin {
+    margin-left: 18px;
+}
+
+img.livre {
+    margin-top: 18px;
+}
+
+a.pastille_link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+a.title {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+a.title:hover {
+    color: rgb(191,63,63);
 }
 
 div.bouton {
