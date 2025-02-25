@@ -1,25 +1,10 @@
 <?php
 
-include "includes/bdd.php";
+include "includes/init.php";
 
-$sql = "
-    SELECT 
-        id,  
-        nom,
-        acoter,
-        prix,
-        ingredients,
-        prix
-    FROM plats
-    ORDER BY 
-    nom ASC
-";
-
-$stmt = $bdd->prepare($sql);
-$stmt->execute();
-$plats = $stmt->fetchAll();
-
+$plats = selectAll("plats","*","nom ASC"); 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
